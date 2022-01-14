@@ -1,0 +1,514 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* NAV SECTION */
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #002642;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+	color: rgb(226, 226, 226);
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.nav-links {
+	display: flex;
+	width: 30%;
+	justify-content: space-around;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: rgb(226, 226, 226);
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 9px 15px;
+	border-radius: 15px;
+	transition: all 0.5s ease;
+}
+
+.nav-links a:hover {
+	background-color: #2ecece;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.burger div {
+	width: 25px;
+	height: 2px;
+	background-color: rgb(226, 226, 226);
+	margin: 5px;
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+/* HERO SECTION */
+
+.hero__section {
+	background: url('/img/pexels-james-wheeler-1619317.jpg');
+	height: 90vh;
+	width: 100%;
+	display: flex;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	justify-content: center;
+	align-items: center;
+	color: #070707;
+}
+
+.hero__section h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 5em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.hero__section span {
+	font-weight: 300;
+	width: 100%;
+}
+
+.hero__section-text {
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+/* SERVICE SECTION */
+
+.services__section h2 {
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	margin: 50px auto;
+}
+
+.services__section span {
+	font-weight: 300;
+}
+
+.even-columns {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.even-columns h3 {
+	color: #fff;
+}
+
+.even-columns div {
+	width: 100%;
+	padding: 30px;
+	text-align: justify;
+}
+
+.col1 {
+	background: #043259;
+}
+
+.col2 {
+	background: #002f42;
+}
+
+.col3 {
+	background: #06535c;
+}
+
+.col4 {
+	background: #09524c;
+}
+
+.even-columns img {
+	width: 100%;
+	border-radius: 20px;
+}
+
+/*ABOUT US SECTION*/
+
+.about__section {
+	display: flex;
+	flex-direction: column;
+	margin: 80px auto 30px;
+	width: 70%;
+	background: #011e52;
+	border-radius: 20px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.about-title {
+	width: 100%;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.about-title span {
+	font-weight: 200;
+}
+
+.about-txt {
+	width: 100%;
+	text-align: center;
+	padding: 20px 90px;
+	color: #fff;
+}
+
+/*SERVICE SECTION*/
+
+.contact__section {
+	background: url('/img/pexels-james-wheeler-1619317.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form {
+	width: 70%;
+	margin: 60px auto;
+	background: rgba(0, 0, 0, 0.2);
+	padding: 30px 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+h3 {
+	color: #002642;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin: 0;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+input,
+textarea {
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 7px;
+	position: relative;
+	box-sizing: border-box;
+	border-radius: 5px;
+	outline: none;
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	transition: all 1s ease;
+}
+
+textarea {
+	min-height: 200px;
+	max-height: 300px;
+	min-width: 100%;
+	max-width: 100%;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+#boton {
+	margin-top: 20px;
+	background-color: #2ecece;
+	width: 100%;
+	margin: auto;
+	color: #002642;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	outline: none;
+	border-radius: 5px;
+}
+
+#boton:hover {
+	background-color: #002642;
+	color: aliceblue;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+
+/* FOOTER SECTION */
+
+footer {
+	position: relative;
+	bottom: 0px;
+	width: 100%;
+	background-color: #002642;
+	font-family: 'Open Sans', sans-serif;
+	color: #e5dada;
+	text-align: center;
+}
+
+.main-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.main-content .box {
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+.box h2 {
+	font-size: 1.125em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content {
+	margin: 20px 0 0 0;
+}
+
+.left .content p {
+	text-align: justify;
+}
+
+.left .content label {
+	margin: 30px 15px;
+	align-self: center;
+}
+
+.left .content .social {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 0 0;
+}
+
+.left .content .social a {
+	padding: 0 2px;
+}
+
+.left .content .social a span {
+	height: 50px;
+	width: 50px;
+	background: #1a1a1a;
+	color: #e5dada;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all 0.5s ease;
+}
+
+.left .content .social a span:hover {
+	background: #f12020;
+}
+
+.right h2 {
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+	nav {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	#logo {
+		font-size: 30px;
+	}
+
+	.nav-links {
+		width: 60%;
+	}
+
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #002642;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.6s ease-in-out;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.burger div {
+		height: 5px;
+		width: 40px;
+	}
+
+	.nav-active {
+		transform: translateX(0%);
+	}
+
+	.even-columns {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		overflow-x: hidden;
+	}
+	.nav-links {
+		position: absolute;
+		right: 0px;
+		height: 92vh;
+		top: 8vh;
+		background-color: #002642;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.6s ease-in-out;
+	}
+
+	#logo {
+		font-size: 25px;
+	}
+
+	.burger {
+		display: block;
+	}
+
+	.hero__section h1 {
+		font-size: 3.5em;
+		text-align: center;
+	}
+
+	.about__section {
+		display: block;
+		width: 100%;
+		margin: 30px auto;
+		border-radius: 0;
+	}
+
+	.even-columns {
+		margin-bottom: 0;
+	}
+
+	.about-title {
+		padding-top: 20px;
+	}
+	.about-txt {
+		padding: 30px;
+		text-align: justify;
+	}
+
+	.main-content {
+		display: block;
+	}
+
+	.contact__section h3 {
+		font-size: 20px;
+	}
+}
+
+.nav-active {
+	transform: translateX(0%);
+}
+
+@media screen and (max-width: 576px) {
+	nav {
+		width: 100%;
+		overflow-x: hidden;
+	}
+
+	#logo {
+		font-size: 13px;
+		font-weight: bold;
+	}
+
+	.burger div {
+		width: 25px;
+		height: 2px;
+	}
+
+	.hero__section h1 {
+		font-size: 2.5em;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	nav {
+		overflow-x: hidden;
+	}
+
+	#logo {
+		font-size: 10px;
+	}
+
+	.burger div {
+		width: 25px;
+		height: 2px;
+	}
+
+	div.social {
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	nav {
+		overflow-x: hidden;
+	}
+
+	#logo {
+		font-size: 10px;
+	}
+
+	.burger div {
+		width: 25px;
+		height: 2px;
+	}
+}
